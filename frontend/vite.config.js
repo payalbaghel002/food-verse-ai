@@ -7,9 +7,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://food-verse-ai-46uh.onrender.com',
         changeOrigin: true,
       },
     },
   },
 })
+
