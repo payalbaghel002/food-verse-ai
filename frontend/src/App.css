@@ -1,0 +1,233 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #24382d;
+  background: #f7f8f3;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: white;
+  border-bottom: 1px solid #e5e9df;
+}
+
+.brand {
+  font-size: 23px;
+  font-weight: 800;
+  color: #244c36;
+  text-decoration: none;
+}
+
+.brand span,
+.hero h1 span {
+  color: #719345;
+}
+
+.tagline {
+  color: #758075;
+  font-size: 13px;
+}
+
+.container {
+  width: 88%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 0 60px;
+}
+
+.eyebrow {
+  color: #719345;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 62px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: auto;
+  color: #758075;
+  line-height: 1.8;
+}
+
+.features {
+  padding-bottom: 40px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.feature-count {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #758075;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e5e9df;
+  border-radius: 18px;
+  transition: 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px #24382d12;
+}
+
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #f0f5e8;
+  font-size: 27px;
+}
+
+.feature-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  min-height: 48px;
+  color: #758075;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.feature-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 0;
+  margin-top: 15px;
+  border: 0;
+  border-top: 1px solid #edf0e9;
+  background: transparent;
+  color: #527d3a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid #e5e9df;
+  color: #758075;
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tagline {
+    display: none;
+  }
+}
+
+
+/* Food Verse AI recipe cards */
+
+.recipes-section {
+  margin: 60px 0;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.recipe-card {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8d8;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card h3 {
+  color: #315b36;
+  margin-bottom: 12px;
+}
+
+.recipe-card p {
+  color: #5f6b60;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+
+/* Improve heading visibility */
+
+.hero h1,
+.hero h1 span {
+  color: #719345;
+  opacity: 1;
+}
+
+.feature-heading h2,
+.section-heading h2,
+.features-title {
+  color: #315b36;
+  opacity: 1;
+}
+
+
+.recipe-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: block;
+}
+
